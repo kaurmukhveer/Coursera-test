@@ -1,10 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>HELLO WORLD </title>
+	<title> Positioning elements </title>
+
+	<style > 
+		h1{
+			box-sizing: border-box;
+			background-color: grey;
+			width: 500px;
+			color: black;
+			font-style: italic;
+			font-weight: 50%;
+			font-size:100px ; 
+			margin-bottom: 50px;
+			margin top: 10px;
+			padding: 20px 10px 20px 10px;
+			text-align: center;
+			border: 10px solid blue;
+			overflow: auto;
+		}
+
+		*{box-sizing: border-box;
+			box-shadow: green;
+			margin: 0
+			padding:0;}
+		
+		div{background-color: green;
+			position: relative;
+			top: 10px;
+			left: 20px;}
+		
+		#p1{height: 100px;
+		width: 50px;
+		background-color: #ff0000 ;
+		margin-left: 10px;
+		border: 1px solid black;
+		position:absolute ;
+		bottom: 50px;
+		left: 10px;
+        
+	}   
+		#p2{height: 40px;
+		width: 40px;
+		background-color: yellow;
+        margin-left: 10px;
+        
+        border: 1px solid black;
+        margin-bottom: 10px;
+
+	}	
+		#p3{height: 50px;
+		width: 50px;
+		background-color: gold;
+		margin-left: 10px;
+		margin-top: 20px;
+	   border: 1px solid black;}	
+		
+		#p4{height: 50px;
+		width: 50px;
+		background-color: purple;
+		margin-left:  10px;
+	    
+        border: 1px solid black;}
+        @media (min-width: 1200px ){
+        p1{width: 50%;}
+        }
+		
+	</style>
 </head>
 <body>
-<h1> Hello Coursera </h1>
-<picture>This is my first sublime file. I am really enjoying this . Thanks to coursera!!</picture>
+	<h1>Relative Position</h1>
+<div>
+	<p id="p1">Monu</p>
+	<p id="p2">Tanu</p>
+	<p id="p3">Jashan</p>
+	<p id="p4">Ranveer</p>
+	<section>This is example of relative positioning</section>
+</div>
 </body>
 </html>
